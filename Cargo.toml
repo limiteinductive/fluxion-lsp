@@ -1,0 +1,21 @@
+[package]
+name = "fluxion-lsp"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0.82"
+crossbeam-channel = "0.5.12"
+dashmap = "5.5.3"
+env_logger = "0.11.3"
+is-macro = "0.3.5"
+log = "0.4.21"
+lsp-server = { version = "0.7.6" }
+lsp-types = { version = "0.95.0", features = ["proposed"] }
+ropey = "1.6.1"
+ruff_python_ast = { git = "https://github.com/astral-sh/ruff", version = "0.0.0" }
+ruff_python_parser = { git = "https://github.com/astral-sh/ruff", version = "0.0.0" }
+ruff_text_size = { git = "https://github.com/astral-sh/ruff", version = "0.0.0" }
+serde = { version="1.0.197", features = ["derive"]}
+serde_json = "1.0.115"
+thiserror = "1.0.58"
